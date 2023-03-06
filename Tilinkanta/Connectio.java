@@ -8,7 +8,7 @@ import java.sql.SQLException;
 public class Connectio {
     private final String url = "jdbc:postgresql://localhost/tili";
     private final String user = "Jarno";
-    private final String password = "123Java";
+    private final String password = "123Java"; //Not a real password ;)
 
     public Connection connect() throws ClassNotFoundException {
         Class.forName("org.postgresql.Driver");
