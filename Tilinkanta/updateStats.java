@@ -3,6 +3,17 @@ package Tilinkanta;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
+/*This Java code defines a class named updateStats, which has four methods: changeName, changeAge, changeCountry, and changeSalary. 
+Each of these methods updates a particular field (name, age, country, or salary) of a row in a database table named TILINHALLINTA, given an id value. 
+The new value for the field is passed as a parameter to the method.
+
+The code establishes a database connection using a Connectio class, which is not shown here. It then creates a Statement object and 
+uses it to execute a SQL update statement, which modifies the appropriate field in the database. It then retrieves the updated row from the database
+using a SQL select statement and prints out the values of all the fields in the row using System.out.println(). Finally, it closes the ResultSet, 
+Statement, and database connection objects.
+
+If an exception is thrown during the database operations, the code prints the exception message and exits the program.*/
+
 public class updateStats {
     Statement stmt;
     //Nimenvaihto, käyttäjältä kysytään sekä nimeä että ID:tä, jonka avulla suoritetaan nimenmuutos
